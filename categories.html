@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shirts - Star Boy Clothing</title>
+  <link rel="stylesheet" href="products.css">
+</head>
+<body>
+  <header>
+    <div class="logo">👕 Star Boy Clothing</div>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="cart.html">🛒 Cart</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+<section class="products">
+  <h2>Featured Products</h2>
+  <div class="product-grid">
+    
+    <div class="product-card">
+      <img src="shirt1.jpg" alt="Shirt">
+      <h3>Classic T-Shirt</h3>
+      <p>₦6500</p>
+      <button onclick="addToCart('Classic T-Shirt', 6500)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="hoodie1.jpg" alt="Hoodie">
+      <h3>Black Hoodie</h3>
+      <p>₦9000</p>
+      <button onclick="addToCart('Black Hoodie', 9000)">Add to Cart</button>
+    </div>
+
+    <!-- Add more products the same way -->
+  </div>
+</section>
+
+
+ <script>
+  function addToCart(productName, price) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.push({ name: productName, price: price });
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(`${productName} added to cart!`);
+  }
+</script>
+
+</body>
+</html>
+

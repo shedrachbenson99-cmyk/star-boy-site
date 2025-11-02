@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout - Star Boy Clothing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">💳 Checkout</div>
+     <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <section class="checkout-form">
+      <h2>Enter Your Details</h2>
+      <form id="checkoutForm">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="text" id="address" placeholder="Delivery Address" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <select id="payment-method" required>
+          <option value="">Select Payment Method</option>
+          <option value="transfer">Bank Transfer</option>
+          <option value="card">Debit Card</option>
+        </select><button type="submit">Place Order</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Star Boy Clothing Ventures</p>
+  </footer>
+
+ <script>
+    document.getElementById("checkoutForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const address = document.getElementById("address").value;
+      const email = document.getElementById("email").value;
+      const payment = document.getElementById("payment-method").value;
+
+      if (!name || !address || !email || !payment) {
+        alert("Please fill in all fields.");
+        return;
+      }
+
+      // Simulate successful order
+      alert(`Thank you, ${name}! Your order has been placed.`);
+
+      // Optionally clear cart
+      localStorage.removeItem("cart");
+
+      // Redirect to homepage or thank you page
+      window.location.href = "index.html";
+    });
+  </script>
+
+</body>
+</html>
+
+
