@@ -110,7 +110,7 @@ nav ul {
   flex-direction: row;
   list-style: none;
   gap: 1px;
-  padding: 0;
+  padding: 2;
   margin: 0;
   justify-content: row;
   flex-wrap: wrap; /* Allows wrapping on small screens */
@@ -157,6 +157,7 @@ nav ul {
 
 
 @media (max-width: 480px) {
+
 
 
 
