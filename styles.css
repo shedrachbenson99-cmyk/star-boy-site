@@ -73,5 +73,79 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 40px;
+}/* Responsive adjustments */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .logo {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .logo {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+ .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .cta-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .products {
+    padding: 30px 10px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr; /* single column on mobile */
+    gap: 20px;
+  }
+}.hero {
+    padding: 40px 15px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
 }
+
+
+@media (max-width: 480px) {
+
 
