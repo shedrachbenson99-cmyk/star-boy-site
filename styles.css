@@ -104,12 +104,17 @@ footer {
   }
 
   nav ul {
-    flex-direction: row; /* Keep nav items horizontal */
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows wrapping on small screens */
+}
 
-  }
+
  .hero {
     padding: 60px 20px;
   }
@@ -150,6 +155,7 @@ footer {
 
 
 @media (max-width: 480px) {
+
 
 
 
