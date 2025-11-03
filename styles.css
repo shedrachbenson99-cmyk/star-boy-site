@@ -105,16 +105,15 @@ footer {
 
   
 
-@media (max-width: 480px) {
-  nav ul {
-    gap: 10px; /* smaller gap */
-  }
-  nav ul li a {
-    font-size: 14px; /* smaller font */
-  }
-}
-nav {
-  padding: 0 10px; /* some side padding */
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+  justify-content: row;
+  flex-wrap: wrap; /* Allows wrapping on small screens */
 }
 
 
@@ -158,6 +157,7 @@ nav {
 
 
 @media (max-width: 480px) {
+
 
 
 
