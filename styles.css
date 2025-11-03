@@ -104,8 +104,11 @@ footer {
   }
 
   nav ul {
-    flex-direction: column;
+    flex-direction: row; /* Keep nav items horizontal */
     gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+
   }
  .hero {
     padding: 60px 20px;
@@ -147,5 +150,6 @@ footer {
 
 
 @media (max-width: 480px) {
+
 
 
